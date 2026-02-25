@@ -54,8 +54,8 @@ Hooks.on('diceSoNiceReady', (dice3d) => {
     name: 'bleed',
       description: 'PF2E.TraitBleed',
       category: 'DICESONICE.DamageTypes',
-      foreground: '#CDB800',
-      background: '#6F0000',
+      foreground: '#cc3f3f',
+      background: ['#5c0000', '#470101','#470101','#470101','#630c0c','#801111'],	
       outline: 'black',
       texture: 'marble'
   });

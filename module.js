@@ -1,5 +1,5 @@
 //list of accepted damage flavors
-const flavorList = ["slashing", "bludgeoning", "piercing", "fire","cold","electricity","sonic","poison","acid","void","vitality","mental","force","spirit","fallback"];
+const flavorList = ["slashing", "bludgeoning", "piercing", "fire","cold","electricity","sonic","poison","acid","void","vitality","mental","force","spirit","bleed","fallback"];
 //regex to find dice expressions
 const dieRegex = /[0-9]+d[0-9]+/g;
 
