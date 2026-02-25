@@ -12,7 +12,7 @@ Hooks.on('diceSoNiceMessageProcessed', (cmid, intercept) => {
     if(!message.isRoll)
         return;
     //else add missing flavors
-    console.log(message)
+
     //for each roll of the message
     message.rolls.forEach(roll => {
 
@@ -80,5 +80,6 @@ Hooks.on('diceSoNiceMessageProcessed', (cmid, intercept) => {
         })
 
     })
+
 
 })
