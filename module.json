@@ -3,7 +3,7 @@
   "title": "PF2e Dice Flavor Fix",
   "version": "1.0",
   "manifest": "https://github.com/Maxilos33/pf2e-dice-flavor-fix/releases/latest/download/module.json",
-  "download": "https://github.com/Maxilos33/pf2e-dice-flavor-fix/releases/download/0.4.0.1/module.zip",
+  "download": "https://github.com/Maxilos33/pf2e-dice-flavor-fix/releases/download/1.0/module.zip",
   "compatibility": {
     "minimum": "13",
     "verified": "13"
