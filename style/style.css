@@ -1,0 +1,93 @@
+.pf2e-dice-flavor-fix .aligned_underline{
+    border-bottom: 1px dotted rgba(255, 215, 0, 0.2);
+}
+
+.pf2e-dice-flavor-fix footer{
+    display: flex;
+}
+.pf2e-dice-flavor-fix footer button{
+    flex: 1 1 auto;
+}
+
+
+.pf2e-dice-flavor-fix .fa-fire{
+    color:  #a62f00;
+} 
+.pf2e-dice-flavor-fix .fa-snowflake{
+    color:  #2f2fa6;
+} 
+.pf2e-dice-flavor-fix .fa-bolt{
+    color:  darkgoldenrod;
+} 
+.pf2e-dice-flavor-fix .fa-waveform-lines{
+    color:  darkcyan;
+} 
+.pf2e-dice-flavor-fix .fa-spider{
+    color:  #5b7332;
+} 
+.pf2e-dice-flavor-fix .fa-vial{
+    color:  #007300;
+}
+.pf2e-dice-flavor-fix .fa-sun{
+    color:  #ffffe0;
+}
+.pf2e-dice-flavor-fix .fa-skull{
+    color:  #00001f;
+} 
+.pf2e-dice-flavor-fix .fa-brain{
+    color:  midnightblue;
+} 
+.pf2e-dice-flavor-fix .fa-ghost{
+    color:  #5a5585;
+} 
+.pf2e-dice-flavor-fix .fa-sparkles{
+    color:  #6300aa;
+} 
+.pf2e-dice-flavor-fix .fa-droplet{
+    color:  #99001a;
+} 
+.pf2e-dice-flavor-fix .fa-axe{
+    color:  #3c3c3c;
+} 
+.pf2e-dice-flavor-fix .fa-bow-arrow{
+    color:  #3c3c3c;
+} 
+.pf2e-dice-flavor-fix .fa-hammer{
+    color:  #3c3c3c;
+} 
+.pf2e-dice-flavor-fix .fa-crosshairs{
+    color:  #3c3c3c;
+}
+
+.pf2e-dice-flavor-fix .fa-crosshairs{
+    color:  #3c3c3c;
+}
+
+.pf2e-dice-flavor-fix .fa-crosshairs{
+    color:  #3c3c3c;
+}
+
+.pf2e-dice-flavor-fix .fa-heart-crack{
+   color:  #111111;
+}
+.pf2e-dice-flavor-fix .title{
+   width: 100%;
+   text-align: center;
+}
+
+
+
+
+
+.pf2e-dice-flavor-fix .outlined {
+    text-align: center;
+    width: 20px;
+    text-shadow: 2px 2px 0 #E2DDD3,
+    -2px -2px 0 #E2DDD3,
+    2px -2px 0 #E2DDD3,
+    -2px 2px 0 #E2DDD3,
+    0px 2px 0 #E2DDD3,
+    2px 0px 0 #E2DDD3,
+    0px -2px 0 #E2DDD3,
+    -2px 0px 0 #E2DDD3;
+}

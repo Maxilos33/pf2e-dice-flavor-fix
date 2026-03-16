@@ -1,0 +1,33 @@
+<section class="tab" data-group="dff-main">
+    <br>
+    <div class="form-group">
+            {{#if maintoggle.label}}<label>{{#if maintoggle.icon}}<i class="{{maintoggle.icon}} outlined" inert></i>&nbsp; {{/if}}{{localize maintoggle.label}}</label>{{/if}}
+            <input  class="disable_controller"  
+                    type="{{maintoggle.type}}" 
+                        {{#if maintoggle.name}}name="{{maintoggle.name}}"{{/if}} 
+                        {{#if maintoggle.checked}}checked{{/if}}
+                        />         
+    <p class="hint">{{localize fullReplacement.text}}</p>
+    </div>
+    <hr>
+    <div class="form-group" style="display: block;">
+    <label style="line-height:200%; margin-bottom:20px; font-size:133%;">{{localize title.text}}</label>
+    {{#each pfoptions as |pfoption|}}
+        <div>
+        <div class="form-group">
+            {{#if pfoption.label}}<label>{{#if pfoption.icon}}<i class="{{pfoption.icon}} outlined" inert></i>&nbsp; {{/if}}{{localize pfoption.label}}</label>{{/if}}
+            <input      class="dynamic_disable_toggle"
+                        type="{{pfoption.type}}" 
+                        {{#if pfoption.name}}name="{{pfoption.name}}"{{/if}} 
+                        {{#if pfoption.checked}}checked{{/if}} 
+                        {{#if pfoption.disabled}} disabled="disabled"{{/if}} 
+                        />         
+        </div>
+        </div>
+        <br>     
+    {{/each}}
+    
+    <p class="hint">{{localize customizable.text}}</p>
+    </div>
+    <hr>
+</section>

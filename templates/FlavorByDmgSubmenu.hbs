@@ -1,0 +1,12 @@
+<section class="tab" data-group="dff-main">
+    {{#each toggles as |toggle|}}
+        <div class="form-group aligned_underline">
+            {{#if toggle.label}}<label>{{#if toggle.icon}}<i class="{{toggle.icon}} outlined" inert></i>&nbsp; {{/if}}{{localize toggle.label}}</label>{{/if}}
+            <input    type="{{toggle.type}}" 
+                        {{#if toggle.name}}name="{{toggle.name}}"{{/if}} 
+                        {{#if toggle.checked}}checked{{/if}} 
+                        />         
+        </div>      
+    {{/each}}
+    <hr>
+</section>

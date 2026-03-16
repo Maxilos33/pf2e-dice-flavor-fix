@@ -1,0 +1,62 @@
+<section class="tab" data-group="dff-main">
+    <br>
+    <div class="form-group aligned_underline">
+        {{#if primarydice.label}}<label>{{#if primarydice.icon}}<i class="{{primarydice.icon}} outlined" inert></i>&nbsp; {{/if}}{{localize primarydice.label}}</label>
+        <select {{#if primarydice.name}}name="{{primarydice.name}}"{{/if}} /> 
+            {{#each primarydice.options as |doption|}}
+            <option value="{{doption.opt}}" {{#if doption.enabled}} selected="" {{/if}}> {{localize doption.lang}} </option>
+            {{/each}}
+        </select>
+        {{/if}}
+    <p class="hint">{{localize fullReplacement.text}}</p>
+    {{#if inherited.fullReplacement.cond}}<p class="hint" style="font-size:80%">{{localize inherited.fullReplacement.label}}</p>
+    {{else}}<p class="hint" style="font-size:80%">{{localize inherited.partialReplacement.label}}</p>
+         {{#each inherited.partialReplacement.list as |element|}}
+         <p class="hint" style="font-size:80%; font-style: italic;">- {{localize element}}</p>
+         {{/each}}
+    {{/if}}
+    </div>
+    <br>
+    <div class="form-group">
+            {{#if advReplacement.label}}<label>{{#if advReplacement.icon}}<i class="{{advReplacement.icon}} outlined" inert></i>&nbsp; {{/if}}{{localize advReplacement.label}}</label>{{/if}}
+            <input      class="disable_controller"
+                        type="{{advReplacement.type}}" 
+                        {{#if advReplacement.name}}name="{{advReplacement.name}}"{{/if}} 
+                        {{#if advReplacement.checked}}checked{{/if}} 
+                        />         
+        </div>  
+    <hr>
+    <div class="form-group aligned_underline">
+        {{#if secondarydice.label}}<label>{{#if secondarydice.icon}}<i class="{{secondarydice.icon}} outlined" inert></i>&nbsp; {{/if}}{{localize secondarydice.label}}</label>
+        <select class="dynamic_disable_toggle" 
+        {{#if secondarydice.name}}name="{{secondarydice.name}}"{{/if}} 
+        {{#if secondarydice.disabled}}disabled="disabled"{{/if}} /> 
+            {{#each secondarydice.options as |doption|}}
+            <option value="{{doption.opt}}" {{#if doption.enabled}} selected="" {{/if}}> {{localize doption.lang}} </option>
+            {{/each}}
+        </select>
+        {{/if}}
+    <p class="hint">{{localize partialReplacement.text}}</p>
+    </div>
+    <br>
+    <div class="form-group" style="display: block;">
+    <label style="line-height:200%; margin-bottom:20px; font-size:133%;">{{localize title.text}}</label>
+    {{#each pfoptions as |pfoption|}}
+        <div>
+        <div class="form-group">
+            {{#if pfoption.label}}<label>{{#if pfoption.icon}}<i class="{{pfoption.icon}} outlined" inert></i>&nbsp; {{/if}}{{localize pfoption.label}}</label>{{/if}}
+            <input      class="dynamic_disable_toggle"
+                        type="{{pfoption.type}}" 
+                        {{#if pfoption.name}}name="{{pfoption.name}}"{{/if}} 
+                        {{#if pfoption.checked}}checked{{/if}} 
+                        {{#if pfoption.disabled}} disabled="disabled"{{/if}} 
+                        />         
+        </div>
+        </div>
+        <br>     
+    {{/each}}
+    
+    <p class="hint">{{localize customizable.text}}</p>
+    </div>
+    <hr>
+</section>
