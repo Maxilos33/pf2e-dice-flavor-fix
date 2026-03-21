@@ -17,9 +17,9 @@ function get_flavors(formula, dice_pos){
     const close_regex = /\)/
 
     let final_flavors = [];
-
-    //from current dice position to the next comma as it always terminates an expression we think
+    //from current dice position to the next comma as it always terminates an expression we think (we was wrong)
     let relevant_formula = formula.substring(dice_pos, get_variant_ending_last_index(formula, [','], dice_pos));
+
     //replace all nexted expressions with dummies
     //recursively find nexted expressions until there are none left
     let nests = relevant_formula.match(nest_regex) || [];
@@ -64,6 +64,19 @@ function get_flavors(formula, dice_pos){
 function parse_formula(formula){
     //regex to find dice expressions
     const dieRegex = /\d+d\d+/g;
+    const flavor_bracket_regex = /\[[^\[\]]+\]/g
+
+    //
+    let cleaned_formula = `${formula}`;
+
+    //clean up complex flavors from damage and healing tags
+    let flavor_brackets = formula.match(flavor_bracket_regex) || [];
+    flavor_brackets.forEach((element) => {
+        let cleaned_element = element.replaceAll(',','').replaceAll('healing', '').replaceAll('damage','');
+        cleaned_formula = cleaned_formula.replace(element, cleaned_element)
+    })
+
+    formula = cleaned_formula;
 
     //find all die in the roll
     let diceMatches = [];
