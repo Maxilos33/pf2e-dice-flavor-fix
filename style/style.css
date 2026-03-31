@@ -70,16 +70,82 @@
 .pf2e-dice-flavor-fix .fa-heart-crack{
    color:  #111111;
 }
+/*Materials*/
+
+.pf2e-dice-flavor-fix .fa-dove{
+   color:  #686f7e;
+}
+
+.pf2e-dice-flavor-fix .fa-moon{
+   color:  #c8cdd6;
+}
+
+.pf2e-dice-flavor-fix .fa-circle-dot.fa-solid{
+   color:  #eeb97d;
+}
+
+.pf2e-dice-flavor-fix .fa-circle-dot.fa-regular{
+   color:  #d35e2f;
+}
+
+.pf2e-dice-flavor-fix .fa-meteor{
+   color:  #0e0e0e;
+}
+
+.pf2e-dice-flavor-fix .fa-feather-pointed{
+   color:  #cbccd1;
+}
+
+.pf2e-dice-flavor-fix .fa-leaf{
+   color:  #3d144e;
+}
+
+.pf2e-dice-flavor-fix .fa-border-none{
+   color:  #a99489;
+}
+
+.pf2e-dice-flavor-fix .fa-fire-flame-curved{
+   color:  #148fa5;
+}
+
+.pf2e-dice-flavor-fix .fa-gem{
+   color:  #698858;
+}
+
+.pf2e-dice-flavor-fix .fa-hand-fist{
+   color:  #85c46a;
+}
+
+.pf2e-dice-flavor-fix .fa-water{
+   color:  #aa2704;
+}
+
+.pf2e-dice-flavor-fix .fa-radiation{
+   color:  #37bbbe;
+}
+
+.pf2e-dice-flavor-fix .fa-burst{
+   color:  #852f8d;
+}
+
+.pf2e-dice-flavor-fix .fa-mountain{
+   color:  #343232;
+}
+
+.pf2e-dice-flavor-fix .fa-seedling{
+   color:  #a32e19;
+}
+
+.pf2e-dice-flavor-fix .fa-clock-rotate-left{
+   color:  #c87809;
+}
+
 .pf2e-dice-flavor-fix .title{
    width: 100%;
    text-align: center;
 }
 
-
-
-
-
-.pf2e-dice-flavor-fix .outlined {
+.pf2e-dice-flavor-fix i.outlined{
     text-align: center;
     width: 20px;
     text-shadow: 2px 2px 0 #E2DDD3,
@@ -90,4 +156,19 @@
     2px 0px 0 #E2DDD3,
     0px -2px 0 #E2DDD3,
     -2px 0px 0 #E2DDD3;
+}
+
+
+body.theme-light .application:not(.themed).pf2e-dice-flavor-fix i.outlined, 
+.themed.theme-light.pf2e-dice-flavor-fix i.outlined{
+    text-align: center;
+    width: 20px;
+    text-shadow: 2px 2px 0 #b9b9b9,
+    -2px -2px 0 #b9b9b9,
+    2px -2px 0 #b9b9b9,
+    -2px 2px 0 #b9b9b9,
+    0px 2px 0 #b9b9b9,
+    2px 0px 0 #b9b9b9,
+    0px -2px 0 #b9b9b9,
+    -2px 0px 0 #b9b9b9;
 }

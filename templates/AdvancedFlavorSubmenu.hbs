@@ -2,19 +2,31 @@
     <br>
     <div class="form-group aligned_underline">
         {{#if primarydice.label}}<label>{{#if primarydice.icon}}<i class="{{primarydice.icon}} outlined" inert></i>&nbsp; {{/if}}{{localize primarydice.label}}</label>
-        <select {{#if primarydice.name}}name="{{primarydice.name}}"{{/if}} /> 
+        <select {{#if primarydice.name}} name="{{primarydice.name}}"{{/if}} /> 
             {{#each primarydice.options as |doption|}}
             <option value="{{doption.opt}}" {{#if doption.enabled}} selected="" {{/if}}> {{localize doption.lang}} </option>
             {{/each}}
         </select>
         {{/if}}
     <p class="hint">{{localize fullReplacement.text}}</p>
+    <div style="display:flex;justify-content: flex-start">
+    <div  style="width:50%">
     {{#if inherited.fullReplacement.cond}}<p class="hint" style="font-size:80%">{{localize inherited.fullReplacement.label}}</p>
     {{else}}<p class="hint" style="font-size:80%">{{localize inherited.partialReplacement.label}}</p>
          {{#each inherited.partialReplacement.list as |element|}}
          <p class="hint" style="font-size:80%; font-style: italic;">- {{localize element}}</p>
          {{/each}}
     {{/if}}
+    </div>
+        <div style="width:50%">
+    {{#if inherited.fullReplacement2.cond}}<p class="hint" style="font-size:80%">{{localize inherited.fullReplacement2.label}}  {{localize inherited.fullReplacement2.label2}}</p>
+    {{else}}<p class="hint" style="font-size:80%">{{localize inherited.partialReplacement2.label}}</p>
+         {{#each inherited.partialReplacement2.list as |element|}}
+         <p class="hint" style="font-size:80%; font-style: italic;">- {{localize element}}</p>
+         {{/each}}
+    {{/if}}
+    </div>
+    </div>
     </div>
     <br>
     <div class="form-group">
