@@ -263,7 +263,7 @@ dice3d.addColorset({
   name: 'cold-iron',
     description: 'PF2E.PreciousMaterialColdIron',
     category: 'DICEFIX.Materials',
-    foreground: '#ababab',
+    foreground: '#ffffff',
     background: ['#4f4f4f','#4a4a4a','#707070'],
 	  outline: 'black',
     texture: 'stone',
